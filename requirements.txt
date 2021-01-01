@@ -7,7 +7,7 @@ Flask==1.1.2
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-Werkzeug==1.0.1
+werkzeug==0.16.1
 
 # Flask Packages
 Flask-Login==0.4.0
@@ -20,3 +20,8 @@ Flask-User==1.0.1.5
 # Automated tests
 pytest==3.0.5
 pytest-cov==2.4.0
+
+
+# additional packages
+# pip install email_validator
+# pip install werkzeug==0.16.0
