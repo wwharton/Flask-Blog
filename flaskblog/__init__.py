@@ -15,7 +15,7 @@ db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 
 login_manager = LoginManager(app)
-login_manager.login_view = 'login' #this view is my login function in routes
+login_manager.login_view = 'users.login' #this view is my login function in routes
 login_manager.login_message_category = 'info' #info is a bootstrap class
 
 # Flask Mail config, including windows environment variables
@@ -30,7 +30,10 @@ app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS')
 mail = Mail(app)
 
 
-
-
 # routes import must follow db init otherwise we fall into an import loop
-from flaskblog import routes
+from flaskblog.users.routes import users
+from flaskblog.posts.routes import posts
+from flaskblog.main.routes import main
+app.register_blueprint(users)
+app.register_blueprint(posts)
+app.register_blueprint(main)
