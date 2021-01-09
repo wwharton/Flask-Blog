@@ -1,0 +1,41 @@
+# This file is used by pip to install required python packages
+# Usage: pip install -r requirements_old.txt
+
+# Flask Framework
+click==7.1.2
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+werkzeug==0.16.1
+
+# Flask Packages
+Flask-Login==0.4.0
+Flask-Migrate==2.0.2
+Flask-Script==2.0.5
+Flask-SQLAlchemy==2.4.0
+Flask-WTF==0.14.2
+Flask-User==1.0.1.5
+
+# Automated tests
+pytest==3.0.5
+pytest-cov==2.4.0
+
+
+# Additional Dependencies
+bcrypt==3.1.4
+blinker==1.4
+certifi==2016.2.28
+cffi==1.11.5
+Flask-Bcrypt==0.7.1
+Flask-Mail==0.9.1
+Pillow==5.3.0
+pycparser==2.18
+six==1.11.0
+SQLAlchemy==1.2.7
+WTForms==2.1
+
+
+# additional packages
+# pip install email_validator
+# pip install werkzeug==0.16.0
